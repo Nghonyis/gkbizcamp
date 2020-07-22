@@ -23,7 +23,7 @@ h5 {
 
 .font-fjalla {
   font-family: "Fjalla One", sans-serif;
-  text-transform: uppercase;
+  text-transform: none;
   font-weight: 300; }
 
 .font-opensans {
@@ -56,7 +56,7 @@ p {
 nav {
   display: flex;
   justify-content: center;
-  text-transform: uppercase;
+  text-transform: none;
   font-size: 0.6rem;
   font-weight: 600;
   letter-spacing: 3px;
