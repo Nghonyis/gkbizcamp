@@ -129,3 +129,13 @@ nav {
   body {
   }
 }
+
+::-moz-selection { /* Code for Firefox */
+  color: #fff;
+  background: #ff0000;
+}
+
+::selection {
+  color: #fff;
+  background: #ff0000;
+}
