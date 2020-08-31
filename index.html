@@ -1,376 +1,973 @@
+
 <!doctype html>
-<html>
+<html lang="en">
   <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="shortcut icon" href="favicon.png">
-  <link rel="icon" type="image/x-icon" href="favicon.png">
+    <meta http-equiv="refresh" content="0;url=https://www.geekulcha.dev" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+    
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+    
+          // Store hash
+          var hash = this.hash;
+    
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top - 70
+          }, 800, function(){
+       
+            // Add hash (#) to URL when done scrolling (default click behavior)
+           // window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+    </script>
+
+    
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+<link rel='stylesheet' href="https://www.geekulcha.dev/static/css/reactify-django.ui.css" />
+<link rel='stylesheet' href="https://www.geekulcha.dev/static/css/main.css" />
+<link rel='stylesheet' href="https://www.geekulcha.dev/static/css/bundle.css" />
+<link href="https://fonts.googleapis.com/css?family=Dosis:400,500,600,700%7COpen+Sans:400,600,700" rel="stylesheet">
+<link rel="stylesheet" href="https://www.geekulcha.dev/static/vendor/strokegap/style.css">
+<link rel="stylesheet" href="/static/vendor/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="/static/vendor/linearicons/style.css">
+<link rel="stylesheet" href="https://www.geekulcha.dev/static/vendor/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://www.geekulcha.dev/static/vendor/slick-carousel/slick/slick.css">
+<link rel="stylesheet" href="https://www.geekulcha.dev/static/vendor/fancybox/dist/jquery.fancybox.min.css">
+<link rel="stylesheet" href="https://www.geekulcha.dev/static/vendor/animate/animate.min.css">
 
 
-  <!-- HTML Meta Tags -->
-  <title>Business Sense Camp 2020 | Geekulcha</title>
-  <meta name="description" content="">
+        <title>
+          Home of the Geeks
+          | Geekulcha
+        </title>
+    
+        <link rel="shortcut icon" href="https://geekulcha.com/assets/img/favicon.png" type="image/png" />
+            <link rel="shortcut icon" href="https://geekulcha.com/assets/img/favicon.png" type="image/png" />      
+      
+            <style>.bg-primary {
+                    background-color: #ff0000!important;
+                }
+                .active { border-bottom: 2px solid #ee1818; color: #ee1818;}
+                .nav-link .btn .btn .btn-rounded .btn-green { background: #ff0000;}
+                @media only screen and (max-width:480px){
+    .btn{ display: block; margin-bottom: 15px;}
 
-  <!-- Google / Search Engine Tags -->
-  <meta itemprop="name" content="Business Sense Camp 2020 | Geekulcha">
-  <meta itemprop="description" content="Ensuring that local Geeks build business cases for existing and new markets">
-  <meta itemprop="image" content="https://live.staticflickr.com/65535/49268827877_97e764ec21_c_d.jpg">
+    .testimonial_section .about_content .layer_content a {
+        display: block;
+        margin-left: 20px;
+        margin-bottom: 15px; }
+        .testimonial_section .about_content {
+            padding-left: 15px; }
+            .row {
+                margin-right: 0px;
+                margin-left: 0px; }
+                .cart .btn {
+                   display: block; font-size: inherit;     font-weight: 800;
+    padding: 13px 5px;
+    border-radius: 50%;
+    line-height: 50%;
+    height: 40px;
+    width: 40px; }
+    }
+    html {
+  scroll-behavior: smooth;
+}
+                </style>
 
-  <!-- Facebook Meta Tags -->
-  <meta property="og:url" content="/">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Business Sense Camp 2020 | Geekulcha">
-  <meta property="og:description" content="Ensuring that local Geeks build business cases for existing and new markets">
-  <meta property="og:image" content="https://live.staticflickr.com/65535/49268827877_97e764ec21_c_d.jpg">
+                <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-165390092-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-  <!-- Twitter Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Business Sense Camp 2020 | Geekulcha">
-  <meta name="twitter:description" content="Ensuring that local Geeks build business cases for existing and new markets">
-  <meta name="twitter:image" content="https://live.staticflickr.com/65535/49268827877_97e764ec21_c_d.jpg">
+  gtag('config', 'UA-165390092-1');
+</script>
 
-  
+      
+        </head>
+      <body>
+        <div class="container2">
+            <header class="header header-shrink header-inverse fixed-top">
+                <div class="container">
+                   <nav class="navbar navbar-expand-lg px-md-0">
+                        
+                      <a class="navbar-brand" href="/">
+                      <span class="logo-default">
+                      <h2 class="logo-brand-color">Geekulcha</h2>
+                      </span>
+                      <span class="logo-inverse">
+                      <h2 class="logo-brand-color-inverse">Geekulcha</h2>
+                      </span>
+                      </a>
+                      
+                      <button class="navbar-toggler p-0" data-toggle="collapse" data-target="#navbarNav">
+                         <div class="hamburger hamburger--spin js-hamburger">
+                            <div class="hamburger-box">
+                               <div class="hamburger-inner"></div>
+                            </div>
+                         </div>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNav">
+                         <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                               <a class=" active  nav-link" href="https://www.geekulcha.dev">Home</a>
+                            </li>
+                            <li class="nav-item">
+                               <a class=" nav-link" href="https://www.geekulcha.dev/profile">Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class=" nav-link" href="https://www.geekulcha.dev/events" >Events</a>
+                               
+                             </li>
+                            
+                             <li class="nav-item">
+                                <a class=" nav-link" href="https://www.geekulcha.dev/young-geeks">#Top15YoungGeeks</a>
+                             </li>
+                            
+                             <li class="nav-item">
+                                <a class=" nav-link" href="https://www.geekulcha.dev/crew">Crew</a>
+                             </li>
+                         
+                            <li class="nav-item">
+                               <a class=" nav-link" href="https://www.geekulcha.dev/friends">Partners</a></li>
+                             <li class="nav-item">
+                                <a class="nav-link" href="https://blog.geekulcha.com" data-scrollto="blog">Blog</a></li>
+                                <li class="nav-item">
+                                 <a class="nav-link" href="https://gkss.geekulcha.dev" target="_blank">GKSS</a>
+                              </li>
+                           
+                            <!-- Check buttons -->
+                            
+                            <li class="nav-item">
+                                <a class="btn-sp btn-rounded btn-green ml-lg-4 text-capitalize" href="https://safehack.geekulcha.dev" target="_blank"><i class="fa fa-lock"></i> #SafeHack</a>
+                             </li>
+                             
+                         </ul>
+                      </div>
+                   </nav>
+                </div>
+                <style>
+                   a {
+    color: #e80000;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+a:hover {
+    color: #000;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.6.0/tiny-slider.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="author" href="humans.txt">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.6.0/min/tiny-slider.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
-  </head>
-  <body>
-  <nav class="nav--desktop">
-  
-    <a href="#section-hero" class="js-btn" data-hover="home">Home</a>
-  
-    <a href="#section-snippets" class="js-btn" data-hover="snippets">About</a>
-  
-    <a href="00#section-features" class="js-btn" data-hover="features">features</a>
-  
-    <a href="#section-stats" class="js-btn" data-hover="stats">stats</a>
-  
-    <a href="#section-integrations" class="js-btn" data-hover="integration">integration</a>
-  
-    <a href="#section-customers" class="js-btn" data-hover="customers">customers</a>
-  
-    <a href="#section-contact" class="js-btn" data-hover="contact">REGISTER</a>
-  
-</nav>
-<nav class="nav--mobile">
-  <div class="nav--icon"><i class="fas fa-cube"></i></div>
-  <div class="mobile-list">
-    <div class="centered">
-      
-        <a href="#section-hero" class="js-btn" data-hover="home">home</a>
-      
-        <a href="#section-snippets" class="js-btn" data-hover="snippets">snippets</a>
-      
-        <a href="#section-features" class="js-btn" data-hover="features">features</a>
-      
-        <a href="#section-stats" class="js-btn" data-hover="stats">stats</a>
-      
-        <a href="#section-integrations" class="js-btn" data-hover="integration">integration</a>
-      
-        <a href="#section-customers" class="js-btn" data-hover="customers">customers</a>
-      
-        <a href="#section-contact" class="js-btn" data-hover="contact">REGISTER</a>
-      
-    </div>
-  </div>
-</nav>
-<section class="section--hero">
-  <div class="flex--horizontal">
-    <div class="flex_child--horizontal aligner">
-      <h1 class="font-fjalla">Business Sense Camp</h1>
-      <p class="">Ensuring that local Geeks build business cases for existing and new markets</p>
-      <a href="#register" class="cta">
-        <strong>Register Today</strong><br>
-        <small>Be part of #BizSenseCamp</small>
-      </a>
-    </div>
-    <div class="flex_child--horizontal fadeInUp">
-      <img src="images/hero-phone.png"  alt="">
-    </div>
-  </div>
-</section>
-<section class="section--summary">
-  <div class="flex--vertical">
-    <div class="flex_child--vertical flex--horizontal summary__lists">
-      
-        <div class="summary__list flex--horizontal fadeIn">
-          <img src="images/summary-github.png" alt="">
-          <p>Masterclasses by industry professionals and seasoned entrepreneurs</p>
-        </div>
-      
-        <div class="summary__list flex--horizontal fadeIn">
-          <img src="images/summary-cpu.png" alt="">
-          <p>Working sessions through channels set up for the different startups with access to mentors</p>
-        </div>
-      
-        <div class="summary__list flex--horizontal fadeIn">
-          <img src="images/summary-dollar.png" alt="">
-          <p>Pitch session, judging and awards ceremony with top startup(s) winning a seed capital.
-            </p>
-        </div>
-      
-    </div>
-    <div class="flex_child--vertical flex--horizontal aligner fadeIn">
-      <p>
-        Building a company from an idea or concept is no easy feat. The failure rate of startups is high with on average around 50% of all startup businesses in South Africa failing within 24 months due to the inability and inexperience of their owners.
-        <br><br> 
-        Challenging local innovators to make business sense, the tech startup bootcamp is a 54 hour business model development bootcamp hosted by Geekulcha and partners.
-<br><br>
-        Innovators with solutions (especially from Hackathons) will spend the weekend working ideating and pivoting in their business cases and model.
+.btn-sp {
+   padding-top: 8px; padding-bottom: 8px;
+   padding-left: 20px; padding-right: 20px;
+   background-color: #ff0000;
+}
+@media (min-width: 768px) {
+.navbar-nav > li > a {
+    padding-top: 8px;
+    padding-bottom: 8px;
+} }
+.navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    margin-top: -10px;
+    padding-left: 20px;
+    line-height: initial;
+}
+                </style>
+             </header>
+    <div class=''>
+            
+
         
-      </p><br><br><br><br>
-      <h2 class="font-fjalla aligner_item--center">#BizSenseCamp</h2>
-    </div>
-  </div>
-</section>
-<section class="section--snippets scroll-to-reveal js-section">
-  <div class="flex--horizontal">
-    <div class="snippets__cards flex--vertical">
-      
-        <div class="snippets__card flex--horizontal">
-          <p>Health check on the latest selected time range</p>
-          <h3 class="font-fjalla">OK</h3>
-        </div>
-      
-        <div class="snippets__card flex--horizontal">
-          <p>The average ping up time of selected time range</p>
-          <h3 class="font-fjalla">95%</h3>
-        </div>
-      
-        <div class="snippets__card flex--horizontal">
-          <p>Average latency in the selected time range</p>
-          <h3 class="font-fjalla">19ms</h3>
-        </div>
-      
-        <div class="snippets__card flex--horizontal">
-          <p>Shows the average packet lost in selected time range</p>
-          <h3 class="font-fjalla">0.1</h3>
-        </div>
-      
-        <div class="snippets__card flex--horizontal">
-          <p>Error rate of bit transmission in selected time range</p>
-          <h3 class="font-fjalla">0.02%</h3>
-        </div>
 
-        <div class="snippets__card flex--horizontal">
-          <p>Error rate of bit transmission in selected time range</p>
-          <h3 class="font-fjalla">0.02%</h3>
-        </div>
-      
-    </div>
-    <div class="snippets__content animated fadeInDown">
-      <h3 class="font-fjalla snippets__title">Easy tracking of all Your stats</h3>
-      <p class="snippets__description">Throughput is controlled by available bandwidth, as well as the available signal-to-noise ratio and hardware limitations. Throughput for the purpose of this article will be understood to be measured from the arrival of the first bit of data at the receiver, to decouple the concept of throughput from the concept of latency. <br><br> Choice of an appropriate time window will often dominate calculations of throughput.</p>
-    </div>
-  </div>
-</section>
-<section class="section--features scroll-to-reveal js-section">
-  <div class="section__title">
-    <h3 class="font-fjalla">Activities for the #BizSenseCamp</h3>
-    <p>TCP acceleration converts the TCP packets into a stream that is similar to UDP. Because of this, the TCP acceleration software must provide its own mechanisms to ensure the reliability of the link.</p>
-  </div>
-  <div class="flex--horizontal">
-    <div class="features__left aligner flex--vertical">
-      
-        <div class="flex--vertical fadeInLeft fadeInLeft--0">
-          <object type="image/svg+xml" data="images/features-circle.svg"></object>
-          <p>Performance issues such as throughput and end-to-end delay are also addressed.</p>
-        </div>
-      
-        <div class="flex--vertical fadeInLeft fadeInLeft--1">
-          <object type="image/svg+xml" data="images/features-polygon.svg"></object>
-          <p>Many systems can be characterized as dominated either by throughput limitations or by latency limitations in terms of end-user utility or experience.</p>
-        </div>
-      
-        <div class="flex--vertical fadeInLeft fadeInLeft--2">
-          <object type="image/svg+xml" data="images/features-rec.svg"></object>
-          <p>In some cases, hard limits such as the speed of light present unique problems to such systems and nothing can be done to correct this.</p>
-        </div>
-      
-    </div>
-    <img class="features__image" src="images/features-image.png" alt="">
-    <div class="features__right aligner flex--vertical">
-      
-        <div class="flex--vertical fadeInRight fadeInRight--0">
-          <object type="image/svg+xml" data="images/features-star.svg"></object>
-          <p>Other systems allow for significant balancing and optimization for best user experience.</p>
-        </div>
-      
-        <div class="flex--vertical fadeInRight fadeInRight--1">
-          <object type="image/svg+xml" data="images/features-triangle.svg"></object>
-          <p>A telecom satellite in geosynchronous orbit imposes a path length of at least 71000 km between transmitter and receiver.</p>
-        </div>
-      
-        <div class="flex--vertical fadeInRight fadeInRight--2">
-          <object type="image/svg+xml" data="images/features-rec.svg"></object>
-          <p>This delay can be very noticeable and affects satellite phone service regardless of available throughput capacity.</p>
-        </div>
-      
-    </div>
-  </div>
-</section>
-<section class="section--stats scroll-to-reveal js-section">
-  <div class="section__title">
-    <h3 class="font-fjalla">Stats on Oasis</h3>
-    <p>These long path length considerations are exacerbated when communicating with space probes and other long-range targets beyond Earth's atmosphere.</p>
-  </div>
-  
-    <div class="stats__block">
-      <div class="flex--horizontal">
-        <h5 class="stats__name">A/B Split</h5>
-        <h4 class="font-fjalla stats__result">A/B</h4>
-      </div>
-      <div class="stats">
-        <canvas id="stats-0" ></canvas>
-      </div>
-    </div>
-  
-    <div class="stats__block">
-      <div class="flex--horizontal">
-        <h5 class="stats__name">Crash Rate</h5>
-        <h4 class="font-fjalla stats__result">89%</h4>
-      </div>
-      <div class="stats">
-        <canvas id="stats-1" ></canvas>
-      </div>
-    </div>
-  
-    <div class="stats__block">
-      <div class="flex--horizontal">
-        <h5 class="stats__name">Error reporting API - Uptime</h5>
-        <h4 class="font-fjalla stats__result">100</h4>
-      </div>
-      <div class="stats">
-        <canvas id="stats-2" ></canvas>
-      </div>
-    </div>
-  
-    <div class="stats__block">
-      <div class="flex--horizontal">
-        <h5 class="stats__name">General API</h5>
-        <h4 class="font-fjalla stats__result">81rps</h4>
-      </div>
-      <div class="stats">
-        <canvas id="stats-3" ></canvas>
-      </div>
-    </div>
-  
-    <div class="stats__block">
-      <div class="flex--horizontal">
-        <h5 class="stats__name">Data Access API</h5>
-        <h4 class="font-fjalla stats__result">93%</h4>
-      </div>
-      <div class="stats">
-        <canvas id="stats-4" ></canvas>
-      </div>
-    </div>
-  
-    <div class="stats__block">
-      <div class="flex--horizontal">
-        <h5 class="stats__name">Average Latency</h5>
-        <h4 class="font-fjalla stats__result">1.98ms</h4>
-      </div>
-      <div class="stats">
-        <canvas id="stats-5" ></canvas>
-      </div>
-    </div>
-  
-</section>
-<section class="section--integrations js-section">
-  <div class="section__title">
-    <h3 class="font-fjalla">Trusted by</h3>
-  </div>
-  <div class="flex--horizontal">
-    
-      <img src="images/logos/1.svg" alt="airbnb" class="logo">
-    
-      <img src="images/logos/2.svg" alt="twitter" class="logo">
-    
-      <img src="images/logos/3.svg" alt="eventbrite" class="logo">
-    
-      <img src="images/logos/4.svg" alt="netflix" class="logo">
-    
-      <img src="images/logos/5.svg" alt="google" class="logo">
-    
-      <img src="images/logos/6.svg" alt="spotify" class="logo">
-    
-  </div>
-</section>
-<section class="section--customers js-section">
-  <div class="section__container">
-    <h4 class="title">The Hackathons</h4>
-    <div class="slide__container">
-      
-        <div>
-          <div class="flex--horizontal slide">
-            <div class="slide__content">
-              <h4 class="font-fjalla slide-1">Oasis provides a robust synopsis of our service statuses</h4>
-              <p class="slide-1">Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
-            </div>
-            <img src="images/customer-1.png" alt="" class="slide__image slide-1">
+ <section class="u-py-100 u-h-100vh u-flex-center" style="    position: relative;
+ z-index: 1000; background: linear-gradient( to left, rgba(253, 4, 4, 0.84), /* #ff0505 */ rgba(244, 3, 3, 0.92) /* #272323 */ ), url(https://www.geekulcha.dev/static/img/geeks-header.jpg) no-repeat left top;
+    background-size: cover;">
+    <div class="container">
+       <div class="row ">
+         <div class="col-lg-3 mt-6"> </div>
+          <div class="col-lg-7 mt-6" style="padding: 25px;">
+             <h1 class="display-7 u-fw-800 text-white" style="font-size: 65px;">
+                Home of the <strong>Geeks</strong>
+             </h1>
+             <p class="u-fs-22 u-lh-1_7 u-py-40 text-white">
+               Geekulcha creates and enables platforms for Innovation and Creativity while exposing young talent and skills to the industry for opportuinities.
+
+             </p>
+             <a href="#about" class="btn btn btn-rounded btn-green u-w-160">
+             About Geekulcha
+             </a>
+             <a href="https://www.geekulcha.dev/events" class="btn btn btn-rounded btn-green ml-3 u-w-160">
+             Activities
+             </a>
+             <a href="https://www.geekulcha.dev/young-geeks" class="btn btn btn-rounded btn-green ml-3 u-w-160">
+               #Top15YoungGeeks
+               </a>
           </div>
-        </div>
-      
-        <div>
-          <div class="flex--horizontal slide">
-            <div class="slide__content">
-              <h4 class="font-fjalla slide-2">Oasis has brought clarity to our architecture</h4>
-              <p class="slide-2">Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
-            </div>
-            <img src="images/customer-2.png" alt="" class="slide__image slide-2">
+        
+       </div>
+    </div>
+    <div class="u-pos-abs u-bottom-0 u-z-index-minus-1 u-left-0">
+       <img src="https://www.geekulcha.dev/static/img/app/curve2.png" alt="">
+    </div>
+ </section>
+ <section id="about" style="position: relative;
+ z-index: 1000;     background: #fff;">
+    <div class="container">
+       <div class="row align-items-center">
+          <div class="col-lg-5 text-center">
+             <img class="wow fadeInLeft" src="https://www.geekulcha.dev/static/img/app/s-2_1.png" alt="" style="filter: grayscale(1);"/>
           </div>
-        </div>
+          <div class="col-lg-6 ml-auto">
+             <h2 class="h1">
+                What is Geekulcha About?
+             </h2>
+             <div class="u-h-4 u-w-50 bg-primary rounded mt-4 mb-5"></div>
+             <p class="mb-5">
+              <h3> Shaping the ICT Scene in South Africa</h3>
+
+Geekulcha is where the young, skilled, creative and ambitious tech minds meet to connect with each other, share knowledge, collaborate on projects, network with industry leaders, obtain training to further improve and enhance their skills and to put that newly acquired skill to work. The platform has over 15 800 techies and innovators across Africa.
+<br><br>
+Established 15 March 2013, our focus is on empowering young geeks through ICT skills development and training while giving them a taste of what awaits them in the big world through industry exposure.
+<br><br>
+<b>Enterprising Mankind: Social, Civic and Inclusive</b>
+<br><br>
+The ultimate goal is to ensure that the South African tech ecosystem is competitive and as the build cool technological solutions, there is an element of sustainability as much as possible.
+             </p>
+             <a href="https://www.geekulcha.dev/services" class="btn btn btn-rounded btn-green px-4">
+             <i class="fa fa-code mr-1"></i>
+             Services
+             </a>
+             <a href="#transitions" class="btn btn btn-rounded btn-green ml-3 px-4">
+             <i class="fa fa-tasks mr-1"></i>
+             The 3 Transitions
+             </a>
+             <a href="https://www.geekulcha.dev/friends" class="btn btn btn-rounded btn-green ml-3 px-4">
+              <i class="fa fa-cogs mr-1"></i>
+              Our Partners
+              </a>
+          </div>
+       </div>
+    </div>
+ </section>
+ <section class="bg-dark-grey u-py-100" style=" position: relative;
+ z-index: 1000;">
+    <div class="container">
+       <div class="row text-center">
+          <div class="col-lg-3 col-md-6 u-my-20">
+             <div class="bg-white box-shadow-v1 u-ff-dosis u-py-40 rounded">
+                <h4 class="mb-0 u-fs-36 u-fw-400">
+                   15 800
+                </h4>
+                <p class="u-fs-20">
+                   Geekulcha Community
+                </p>
+             </div>
+          </div>
+          <div class="col-lg-3 col-md-6 u-my-20">
+             <div class="bg-white box-shadow-v1 u-ff-dosis u-py-40 rounded">
+                <h4 class="mb-0 u-fs-36 u-fw-400">
+                   257
+                </h4>
+                <p class="u-fs-20">
+                   Hackathons
+                </p>
+             </div>
+          </div>
+          <div class="col-lg-3 col-md-6 u-my-20">
+             <div class="bg-white box-shadow-v1 u-ff-dosis u-py-40 rounded">
+                <h4 class="mb-0 u-fs-36 u-fw-400">
+                   1080+
+                </h4>
+                <p class="u-fs-20">
+                   Hardware Makers
+                </p>
+             </div>
+          </div>
+          <div class="col-lg-3 col-md-6 u-my-20">
+             <div class="bg-white box-shadow-v1 u-ff-dosis u-py-40 rounded">
+                <h4 class="mb-0 u-fs-36 u-fw-400">
+                   5 9000+
+                </h4>
+                <p class="u-fs-20">
+                   Software Devs
+                </p>
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>
+ <div id="header2" style="border-bottom: 0px;     position: relative;
+ z-index: 1000;">
+   <br><br><br><br>
+<div class="box2" style="background: transparent;
+display: block;     position: relative;
+    background: #fff;"></div>
+<h2 class="caption">#iBlameGK</h2>
+<br><br><br><br>
+</div>
+<section style="background: transparent;
+display: block;     position: relative; padding-bottom: 0px; margin: 0px; padding-top: 0px;">
+<div class="">
+   <!-- Top Navigation -->
+   <div class="row">
+    
+       <div class="grid" style="width: 100%; padding: 0px;">
+           <figure class="effect-ravi">
+               <img src="https://www.geekulcha.dev/static/img/ict.png" alt="img12" />
+               <figcaption>
+                   <div>
+                       <h2>ICT Achievers Awards <span>2016</span></h2>
+                       <p>In 2016, Geekulcha was nominated and won the ICT Achievers Award for the Local Industrialization category.</p>
+                   </div>
+                   <a href="https://www.sanews.gov.za/south-africa/top-achievers-ict-awarded" target="_blank">View more</a>
+               </figcaption>
+           </figure>
+           <figure class="effect-ravi">
+               <img src="https://www.geekulcha.dev/static/img/bbq.jpg" alt="img1" />
+               <figcaption>
+                   <div>
+                       <h2>BBQ Award <span>2017</span></h2>
+                       <p>We won the 2017 Black Business Quarterly Award in The Innovation Hub's New and Innovative Business category.</p>
+                   </div>
+                   <a href="https://www.bizcommunity.com/Article/196/712/169224.html" target="_blank">View more</a>
+               </figcaption>
+           </figure>
+           <figure class="effect-ravi">
+            <img src="https://www.geekulcha.dev/static/img/fast_company.jpg" alt="img1" />
+            <figcaption>
+                <div>
+                    <h2>25 Most Innovative Companies<span>2017</span></h2>
+                    <p>FastCompany Magazine SA named Geekulcha as one of the 27 Most Innovative Companies of 2017.</p>
+                </div>
+                <a href="https://blog.geekulcha.com/geekulcha-amongst-top-25-most-innovative-companies-of-2017/" target="_blank">View more</a>
+            </figcaption>
+        </figure>
+       </div>
+
+   </div>
+</div>
+</section>
+
+ <section class="testimonial_section" style="padding-bottom: 0px; padding-top: 0px; background: #f2f2f2f2;">
+   <div class="container" style="padding-left: 0px; padding-bottom: 0px;">
+       <div class="row">
+           <div class="col-lg-7">
+              <div class="about_content">
+                   <div class="background_layer"></div>
+                   <div class="layer_content">
+                       <div class="section_title">
+                           <h5>Geekulcha Services</h5>
+                           <h2>Providing services both<strong>Local & International</strong></h2>
+                           <div class="heading_line"><span></span></div>
+                           <p>While driving impact, Geekulcha also helps organizations achieve their mandate by providing services that it offers. We are ready to work with your organization.</p>
+                       </div>
+                       <a href="mailto:info@geekulcha.com?subject=Consultation Services">Consultation<i class="icofont-long-arrow-right"></i></a>
+                       <a href="mailto:info@geekulcha.com?subject=Training Services">Trainings<i class="icofont-long-arrow-right"></i></a>
+                       <a href="mailto:info@geekulcha.com?subject=Ecosystem Services">Ecosystems<i class="icofont-long-arrow-right"></i></a>
+                       <a href="mailto:info@geekulcha.com?subject=Digital Serives">Digital<i class="icofont-long-arrow-right"></i></a>
+                       <a href="mailto:info@geekulcha.com?subject=Development Needs">Development<i class="icofont-long-arrow-right"></i></a>
+                   </div>
+               </div>
+           </div>
+           <div class="col-lg-5">
+               <div class="testimonial_box">
+                   <div class="testimonial_container">
+                       <div class="background_layer"></div>
+                       <div class="layer_content">
+                           <div class="testimonial_owlCarousel owl-carousel">
+                               <div class="testimonials"> 
+                                   <div class="testimonial_content">
+                                       <div class="testimonial_caption">
+                                           
+                                       </div>
+                                       <p>With vast experience in the tech ecosystem, Geekulcha will help your organization fulfil its goals by rendering services that are localized for the South African tech ecosystem context.</p>
+                                   </div>
+                                   <div class="images_box">
+                                       <div class="testimonial_img">
+                                           <img class="img-center" src="https://www.geekulcha.dev/static/img/services-header.jpg" alt="images not found">
+                                       </div>
+                                   </div>
+                               </div>
+                          
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+</section>
+<!-- carousel -->
+<style>
+   .m-auto2 {    margin: -40px 140px;
+    z-index: 100000;
+    position: absolute;
+    height: 70px;
+    width: 70px;}
+    .box-shadow-v1 {
+    box-shadow: 0 12px 15px 0 rgba(0,0,0,.05), 0 12px 15px 0 rgba(0,0,0,.02);
+}
+.m-auto2 {
+    margin: -40px 140px;
+    z-index: 100000;
+    position: absolute;
+    height: 70px;
+    background: #ff0000;
+    width: 70px;
+    border: 4px solid;
+}
+.init {
+   filter: brightness(0.5);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.init-desc { text-align: left; padding: 0px 10px;}
+</style>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+ <section id="features" style="    position: relative;
+ z-index: 100; background: #fff;">
+    <div class="container">
+       <div class="row text-center">
+          <div class="col-12">
+             <h2 class="h1">
+                Geekulcha Programmes
+             </h2>
+             <div class="u-h-4 u-w-50 bg-primary rounded mt-4 u-mb-40 mx-auto"></div>
+          </div>
+          <div class="col-lg-4 col-md-6 u-mt-30">
+             <div class="bg-grey u-h-100p rounded box-shadow-v1">
+               <img src="https://live.staticflickr.com/65535/48149125912_407bae2f85_w_d.jpg" class="init" alt="">
+                <div class=" u-flex-center text-white rounded-circle m-auto2">
+                   <span class="fa fa-child u-fs-42"></span>
+                </div><br>
+                <h4 class="u-pt-40 " style="padding-top: 36px;">
+                   <a href="https://future.geekulcha.dev">Geekulcha VacWork</a>
+                </h4>
+                <p class="init-desc">
+                   Grooming the future in South Africa, preparing youngsters from high school.
+                </p>
+             </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 u-mt-30">
+            <div class="bg-grey u-h-100p rounded box-shadow-v1">
+              <img src="https://live.staticflickr.com/65535/33894896818_613bfbcd9d_w_d.jpg" class="init" alt="">
+               <div class=" u-flex-center text-white rounded-circle m-auto2">
+                  <span class="fa fa-female u-fs-42"></span>
+               </div><br>
+               <h4 class="u-pt-40 " style="padding-top: 36px;">
+                  <a href="https://future.geekulcha.dev">Raeketsetsa</a>
+               </h4>
+               <p class="init-desc">
+                  Girls doing it themselves in the tech space while empowering others and the future.
+               </p>
+            </div>
+         </div>
+
+         <div class="col-lg-4 col-md-6 u-mt-30">
+            <div class="bg-grey u-h-100p rounded box-shadow-v1">
+              <img src="https://live.staticflickr.com/924/29673695498_25cb0991cc_w_d.jpg" class="init" alt="">
+               <div class=" u-flex-center text-white rounded-circle m-auto2">
+                  <span class="fa fa-university u-fs-42"></span>
+               </div><br>
+               <h4 class="u-pt-40 " style="padding-top: 36px;">
+                  <a href="https://gkss.geekulcha.dev">GKSS Student Leaders</a>
+               </h4>
+               <p class="init-desc">
+                  Building Tech and Innovation Leadership capacity on campus by students for students.
+               </p>
+            </div>
+         </div>
+
+         <div class="col-lg-4 col-md-6 u-mt-30">
+            <div class="bg-grey u-h-100p rounded box-shadow-v1">
+              <img src="https://live.staticflickr.com/1849/43696286664_992659eb01_w_d.jpg" class="init" alt="">
+               <div class=" u-flex-center text-white rounded-circle m-auto2">
+                  <span class="fa fa-tasks u-fs-42"></span>
+               </div><br>
+               <h4 class="u-pt-40 " style="padding-top: 36px;">
+                  <a href="https://geekulcha.dev/hiregeeks">Hire Geeks</a>
+               </h4>
+               <p class="init-desc">
+                  An intent drive approach to help local geeks be presentable and get hired for jobs.
+               </p>
+            </div>
+         </div>
+
+         <div class="col-lg-4 col-md-6 u-mt-30">
+            <div class="bg-grey u-h-100p rounded box-shadow-v1">
+              <img src="https://live.staticflickr.com/65535/48205384496_9d3533011d_w_d.jpg" class="init" alt="">
+               <div class=" u-flex-center text-white rounded-circle m-auto2">
+                  <span class="fa fa-code u-fs-42"></span>
+               </div><br>
+               <h4 class="u-pt-40 " style="padding-top: 36px;">
+                  <a href="https://future.geekulcha.dev">The Hackathons</a>
+               </h4>
+               <p class="init-desc">
+                  Radical skills and innovation development platforms with industry and like-minds.
+               </p>
+            </div>
+         </div>
+
+         <div class="col-lg-4 col-md-6 u-mt-30">
+            <div class="bg-grey u-h-100p rounded box-shadow-v1">
+              <img src="https://live.staticflickr.com/65535/47107408604_246c1b9f9b_w_d.jpg" class="init" alt="">
+               <div class=" u-flex-center text-white rounded-circle m-auto2">
+                  <span class="fa fa-comment u-fs-42"></span>
+               </div><br>
+               <h4 class="u-pt-40 " style="padding-top: 36px;">
+                  <a href="https://future.geekulcha.dev">1st Year</a>
+               </h4>
+               <p class="init-desc">
+                  Ensuring a journey driven and focused ICT student life from first year level.
+               </p>
+            </div>
+         </div>
+
       
+         <div class="col-lg-4 col-md-6 u-mt-30">
+            <div class="bg-grey u-h-100p rounded box-shadow-v1">
+              <img src="https://live.staticflickr.com/1816/30228766288_010315d00b_w_d.jpg" class="init" alt="">
+               <div class=" u-flex-center text-white rounded-circle m-auto2">
+                  <span class="fa fa-line-chart u-fs-42"></span>
+               </div><br>
+               <h4 class="u-pt-40 " style="padding-top: 36px;">
+                  <a href="https://makers.geekulcha.dev">Open Data Innovation</a>
+               </h4>
+               <p class="init-desc">
+                  Open Data for Innovation and Smart Citizenship - building what matters.
+               </p>
+            </div>
+         </div>
+
+         <div class="col-lg-4 col-md-6 u-mt-30">
+            <div class="bg-grey u-h-100p rounded box-shadow-v1">
+              <img src="https://live.staticflickr.com/869/40569142835_e1ef609618_w_d.jpg" class="init" alt="">
+               <div class=" u-flex-center text-white rounded-circle m-auto2">
+                  <span class="fa fa-lock u-fs-42"></span>
+               </div><br>
+               <h4 class="u-pt-40 " style="padding-top: 36px;">
+                  <a href="https://safehack.geekulcha.dev">SafeHack</a>
+               </h4>
+               <p class="init-desc">
+                  Secure By Design action and challenging local Geeks to Hack Against Digital zombies.
+               </p>
+            </div>
+         </div>
+
+         <div class="col-lg-4 col-md-6 u-mt-30">
+            <div class="bg-grey u-h-100p rounded box-shadow-v1">
+              <img src="https://live.staticflickr.com/4868/32285886068_5805a2246b_w_d.jpg" class="init" alt="">
+               <div class=" u-flex-center text-white rounded-circle m-auto2">
+                  <span class="fa fa-sun-o u-fs-42"></span>
+               </div><br>
+               <h4 class="u-pt-40 " style="padding-top: 36px;">
+                  <a href="https://www.geekulcha.dev">Seasonal DevDays</a>
+               </h4>
+               <p class="init-desc">
+                  When seasons change, a new focus outset is expected of us to evolve in the tech needs
+               </p>
+            </div>
+         </div>
+
+         <div class="col-lg-4 col-md-6 u-mt-30">
+            <div class="bg-grey u-h-100p rounded box-shadow-v1">
+              <img src="https://live.staticflickr.com/4329/35792052951_8e8e85cb65_w_d.jpg" class="init" alt="">
+               <div class=" u-flex-center text-white rounded-circle m-auto2">
+                  <span class="fa fa-cogs u-fs-42"></span>
+               </div><br>
+               <h4 class="u-pt-40 " style="padding-top: 36px;">
+                  <a href="https://makers.geekulcha.dev">Connected Intelligence</a>
+               </h4>
+               <p class="init-desc">
+                  Building intelligence into connected things and leveraging on the data from them.
+               </p>
+            </div>
+         </div>
+
+         <div class="col-lg-4 col-md-6 u-mt-30">
+            <div class="bg-grey u-h-100p rounded box-shadow-v1">
+              <img src="https://live.staticflickr.com/4157/34652324246_aa72ef2ca2_w_d.jpg" class="init" alt="">
+               <div class=" u-flex-center text-white rounded-circle m-auto2">
+                  <span class="fa fa-certificate u-fs-42"></span>
+               </div><br>
+               <h4 class="u-pt-40 " style="padding-top: 36px;">
+                  <a href="https://geekulcha.dev/young-geeks">Top 15 Young Geeks</a>
+               </h4>
+               <p class="init-desc">
+                  Celebrating young local Geeks playing a key role in changing the game in the tech space.
+               </p>
+            </div>
+         </div>
+
+         <div class="col-lg-4 col-md-6 u-mt-30">
+            <div class="bg-grey u-h-100p rounded box-shadow-v1">
+              <img src="https://live.staticflickr.com/8740/16802552997_c7df1b0cbf_w_d.jpg" class="init" alt="">
+               <div class=" u-flex-center text-white rounded-circle m-auto2">
+                  <span class="fa fa-tags u-fs-42"></span>
+               </div><br>
+               <h4 class="u-pt-40 " style="padding-top: 36px;">
+                  <a href="https://www.geekulcha.dev/champions">Provincial Ecosystems</a>
+               </h4>
+               <p class="init-desc">
+                  Ensuring an inclusive Geek Culture within all parts of the country for marginalised areas.
+               </p>
+            </div>
+         </div>
+         
+       </div>
     </div>
-  </div>
-</section>
-<section class="section--contact js-section" id="register" style="border-top: 0.5rem solid #d74646; filter: grayscale(1);">
-  <div class="section__title">
-    <h3 class="font-fjalla">Register for the Business Sense Camp</h3>
-    <p>Sign up here and we send you further information very soon</p>
-    <div class="form-group"> <input type="text" class="input" placeholder="Name and Surname"></div>
-
-    <div class="form-group">
-      <select name="" class="input" id="">
-        <option value="">--- Gender ---</option>
-        <option value="Male">Male</option>
-        <option value="Female">Female</option>
-        <option value="Prefer Not Specify">Prefer Not Specify</option>
-      </select>
+ </section>
+ 
+ <section data-init="parallax" class="main-bg-back-2">
+    <div class="overlay bg-blue-opacity"></div>
+    <div class="container">
+       <div class="row">
+          <div class="col-lg-6 m-auto text-center">
+             <h2 class="h1 text-white u-mb-40">
+                A localised Geek Culture in the Northern Cape province
+             </h2>
+             <a href="https://www.ncdev.co.za" data-init="popup-video">
+             <span class="icon icon-Play u-fs-48 u-fs-md-72 text-white"></span>
+             </a>
+          </div>
+       </div>
     </div>
+ </section>
+ <section id="reviews" style="padding-top: 0px;
+ padding-bottom: 0px;">
 
-    <div class="form-group"> <input type="email" required class="input" placeholder="Email Address"></div>
+<img src="https://www.geekulcha.dev/static/img/ncdev.png" alt="NCDev Ecosystem" width="100%"/>
 
-    <div class="form-group"> <input type="text" class="input" placeholder="Where are you based?"></div>
+ </section>
+ <section id="faq" class="bg-gray-v1">
+    <div class="container">
+       <div class="row">
+          <div class="col-lg-6 m-auto text-center">
+             <h2 class="h1">
+                The Geek Culture For You
+             </h2>
+             <div class="u-h-4 u-w-50 bg-primary rounded mt-4 u-mb-40 mx-auto"></div>
+          </div>
+       </div>
+       <div class="row">         
+          <div class="col-12 mt-4">
+             <div id="accordion" role="tablist" class="bg-white box-shadow-v3">
+                <div class="accordion__faq">
+                   <a class="accordion__title p-4" data-toggle="collapse" href="#acc1">
+                   <i class="fa fa-angle-down mr-3"></i>
+                   How do I become part of the Geekulcha team?
+                   </a>
+                   <div id="acc1" class="collapse show" role="tabpanel" data-parent="#accordion">
+                      <div class="accordion__text">
+                        Although the organization is limited with resources, various ways are made to help local Geeks and industry be part of the Geekulcha platform including: <br><br>
+                        <ul>
+                           <li>Community Member: Staying up to date with the shifts of the industry and opportuinities</li>
+                           <li>Lead Geekulcha on Campus: Be part of the GKSS structures on campus</li>
+                           <li>Provincial Champion: Represent Geekulcha at your own province</li>
+                           <li>Mentor: Support local Geeks with their growth paths</li>
+                           <li>Future GeekStar: School learners can become scholars through the VacWork programme</li>
+                        </ul>
+                     <br><br>
 
-    <div class="form-group"> <input type="text" class="input" placeholder="Organization/Institution"></div>
+                        <!--<a href="../join" class="btn btn btn-rounded btn-green px-4"><i class="fa fa-users mr-1"></i> Join Geekulcha</a>
+                         <a href="https://forms.gle/SHE9Pz4ZdKBRSBix6" class="btn btn btn-rounded btn-green px-4"><i class="fa fa-users mr-1"></i> Geekulcha Provincial Champion</a>
+                         <a href="../join" class="btn btn btn-rounded btn-green px-4"><i class="fa fa-users mr-1"></i> Mentor for GKSS Programme</a> --> 
 
-    <div class="form-group">
-      <select name="" class="input" id="">
-        <option value="Background/Specialization">Background/Specialization</option>
-      </select>
+                        </div>
+                   </div>
+                </div>
+                <div class="accordion__faq">
+                   <a class="accordion__title p-4" data-toggle="collapse" href="#acc2">
+                   <i class="fa fa-angle-down mr-3"></i>
+                   I want my child to learn how to code
+                   </a>
+                   <div id="acc2" class="collapse" role="tabpanel" data-parent="#accordion">
+                      <div class="accordion__text">
+                        We have the Future GeekStars initiative which is used as a platform to monitor the progression of learners from high school to tertiary level and then to the job market so that the transition is made easy.
+<br><br>
+                        The main focus is on skills development and fostering entrepreneurship and innovation that will make them be active leaders of the Information and Communications Technology (ICT) industry.
+                        <br><br>
+                        School learners may be registered for the holiday VacWork programme.
+                        <br><br>
+                        <a href="https://future.geekulcha.dev" class="btn btn btn-rounded btn-green px-4"><i class="fa fa-child mr-1"></i> Checkout the VacWork</a>
+
+                     </div>
+                   </div>
+                </div>
+                <div class="accordion__faq">
+                   <a class="accordion__title p-4" data-toggle="collapse" href="#acc3">
+                   <i class="fa fa-angle-down mr-3"></i>
+                   I'm a student at a university, how can Geekulcha help me?
+                   </a>
+                   <div id="acc3" class="collapse" role="tabpanel" data-parent="#accordion">
+                      <div class="accordion__text">
+Geekulcha was primary created for university students and still has a key focus on them hence the organization leverages on academic partnerships to 
+create and enable more opportuinities for students. <br><br>
+Students at universities can take part of these programmes: <br><br>
+<ul>
+   <li>Student Leadership on campus (GKSS)</li>
+   <li>Hackathons and Mapathons</li>
+   <li>Student VacWork Programme</li>
+</ul>
+<a href="https://gkss.geekulcha.dev/" class="btn btn btn-rounded btn-green px-4"><i class="fa fa-users mr-1"></i> Mentor for GKSS Programme</a>
+
+                      </div>
+                   </div>
+                </div>
+                <div class="accordion__faq">
+                   <a class="accordion__title p-4" data-toggle="collapse" href="#acc4">
+                   <i class="fa fa-angle-down mr-3"></i>
+                   I have an app idea, can Geekulcha assist?
+                   </a>
+                   <div id="acc4" class="collapse" role="tabpanel" data-parent="#accordion">
+                      <div class="accordion__text">
+                         In most cases, Geekulcha crew would be busy with other projects and as such, we owuld refer you to a developer in the community.
+                      </div>
+                   </div>
+                </div>
+                <div class="accordion__faq">
+                   <a class="accordion__title p-4" data-toggle="collapse" href="#acc5">
+                   <i class="fa fa-angle-down mr-3"></i>
+                   Does Geekulcha have any presence ko kasi or in rural areas?
+                   </a>
+                   <div id="acc5" class="collapse" role="tabpanel" data-parent="#accordion">
+                      <div class="accordion__text">
+                         From time to time we host the programmes in the townships. Digital litreacy programmes or trainings are set fr rural and remote areas.
+                      </div>
+                   </div>
+                </div>
+               
+             </div>
+          </div>
+       </div>
     </div>
+ </section>
+ <section id="download" class="pb-0 main-bg-back-3">
+    <div class="container">
+       <div class="row">
+          <div class="col-lg-6 align-self-end order-2 order-lg-1 text-center">
+             <img class="box-shadow-v3" src="https://www.geekulcha.dev/static/img/app/s-1.png" style="height:500px; filter: grayscale(1);" alt="">
+          </div>
+          <div class="col-lg-6 text-white order-lg-2 mb-5">
+             <h2 class="h1 text-white">
+                Support The Ecosystem
+             </h2>
+             <div class="u-h-4 u-w-50 bg-white rounded mt-4 u-mb-20"></div><br>
+             <p>
+               Born out of a Facebook Group (INNOvatorz.IT), Geekulcha seeks to build a strong Geek Culture in South Africa to realize a state of more Producers than Consumers. 
+               Geekulcha champions these aspects:
+               <br><br>
+            <ul>
+               <li>Tech Excitation: Geekulcha has a variety of localized tech programmes for the digital emancitipation</li><br>
+               <li>Geeks Thoughts: Young Geeks have a platform to share their thoughts, discover and be discovered in the industry</li><br>
+               <li>Young Talent: Enabling and nurturing young talent to be the next best in tech industry</li>
+            </ul>
+               </p>
+            <!--
+             <p class="u-fs-15 ">
+                What's your interest?
+             </p>
+           
+             <a href="#" class="btn btn btn-rounded btn-green ml-3 px-1">
+             <i class="fa fa-bar-chart mr-1"></i>
+             Data Science
+             </a>
+             <a href="#" class="btn btn btn-rounded btn-green px-1">
+              <i class="fa fa-desktop mr-1"></i>
+              Software
+              </a>
+              <a href="#" class="btn btn btn-rounded btn-green px-1">
+             <i class="fa fa-wrench mr-1"></i>
+             Hardware
+             </a>
+             <a href="#" class="btn btn btn-rounded btn-green px-1">
+               <i class="fa fa-signal mr-1"></i>
+               Networks
+               </a> -->
+           
+          </div>
+       </div>
+    </div>
+ </section>
 
-    <div class="form-group">
-      <input type="text" class="input" placeholder="Your Email"> </div>
+ <section id="transitions" style="    position: relative;
+ z-index: 1000; background: #f2f2f2;">
+    <div class="container">
+       <div class="row">
+          <div class="col-lg-7 m-auto text-center">
+             <h2 class="h1">
+                Staying True to these Transitions
+             </h2>
+             <ul>
+                
+                </ul>
+             <div class="u-h-4 u-w-50 bg-primary rounded mt-4 u-mb-40 mx-auto"></div>
+          </div>
+       </div>
+       <div class="row">
+          <div class="col-md-4 mt-4">
+             <img src="https://live.staticflickr.com/2877/33870371615_60ebd6f6d0_w_d.jpg" alt="" width="100%">
+             <div class="card border-0 box-shadow-v1">
+               
+                <div class="u-p-30">
+                   <h4>High School Learner</h4>
+                   <p class="d-flex text-muted">
+                      <span><i class="fa fa-tag mr-1"></i> #gkVacWork</span>
+                      <span><i class="fa fa-tag ml-3"></i> STEM</span>
+                   </p>
+                   <p>
+                      Building excitation and enlightenment onto young minds from high school.
+                   </p>
+                   <a href="https://future.geekulcha.dev" class="btn btn-green btn-rounded my-3" target="_blank">Read More</a>
+                </div>
+             </div>
+          </div>
+          <div class="col-md-4 mt-4">
+             <img src="https://live.staticflickr.com/633/31760347260_f173a4d993_w_d.jpg" alt="" width="100%" height="233.63px">
+             <div class="card border-0 box-shadow-v1">
+                
+                <div class="u-p-30">
+                   <h4>
+                      To Tertiary
+                   </h4>
+                   <p class="d-flex text-muted">
+                      <span><i class="fa fa-tag mr-1"></i> 1stYear</span>
+                      <span><i class="fa fa-tag mr-1 ml-3"></i> #GKSS2020</span>
+                   </p>
+                   <p>
+                      Academic excellence through tech and innovation leadership on campus.
+                   </p>
+                   <a href="https://gkss.geekulcha.dev" class="btn btn-green btn-rounded my-3" target="_blank">
+                   Read More
+                   </a>
+                </div>
+             </div>
+          </div>
+          <div class="col-md-4 mt-4">
+             <img src="https://live.staticflickr.com/5488/22822939158_2a35e9a758_w_d.jpg" alt="" width="100%" >
+             <div class="card border-0 box-shadow-v1">
+                
+                <div class="u-p-30">
+                   <h4>
+                      To the Job Market
+                   </h4>
+                   <p class="d-flex text-muted">
+                      <span><i class="fa fa-tag mr-1"></i> #GKHack20</span>
+                      <span><i class="fa fa-tag mr-1 ml-3"></i> #HireGeeks</span>
+                   </p>
+                   <p>
+                      Development onto one's career and getting exposed to opportuinities.
+                   </p>
+                   <a href="https://www.geekulcha.dev/hackathons" class="btn btn-green btn-rounded my-3">
+                   Read More
+                   </a>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>
+ <footer class="footer-bg-back" style="position: relative; z-index: 1000;">
+    <div class="container">
+       <div class="row">
+          
+          <div class="col-12 text-center u-py-60">
+              <h2 class="logo-brand-footer text-white"><strong>Geekulcha</strong></h2>
+             <ul class="list-inline social social-rounded mt-4">
+                <li class="list-inline-item">
+                   <a href="https://facebook.com/geekulcha"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li class="list-inline-item">
+                   <a href="https://twitter.com/geekulcha"><i class="fa fa-twitter"></i></a>
+                </li>
+                <li class="list-inline-item">
+                   <a href="https://youtube.com/geekulcha"><i class="fa fa-youtube"></i></a>
+                </li>
+                <li class="list-inline-item">
+                   <a href="https://www.linkedin.com/company/geekulchagk"><i class="fa fa-linkedin"></i></a>
+                </li>
+                <li class="list-inline-item">
+                   <a href="https://flickr.com/geekulcha/albums"><i class="fa fa-flickr"></i></a>
+                </li>
+             </ul>
+          </div>
+       </div>
+       <div class="row align-items-center" style="border-top:1px solid #c3f4df;color:#c3f4df">
+          <div class="col-lg-6 py-4 text-center text-lg-left">
+             <span class="text-white">© Copyright 2020 <a href="https://www.geekulcha.dev">Geekulcha</a></span>
+          </div>
+          <div class="col-lg-6 py-4">
+             <ul class="list-inline footer-nav u-ff-dosis text-center text-lg-right">
+                <li class="list-inline-item">
+                   <a class="text-uppercase u-fw-600 p-2" href="https://www.geekulcha.dev">HOME</a>
+                </li>
+                <li class="list-inline-item">
+                   <a class="text-uppercase u-fw-600 p-2" href="https://www.geekulcha.dev/profile">Profile</a>
+                </li>
+                <li class="list-inline-item">
+                   <a class="text-uppercase u-fw-600 p-2" href="https://www.geekulcha.dev/crew">The Crew</a>
+                </li>
+                <li class="list-inline-item">
+                   <a class="text-uppercase u-fw-600 p-2" href="https://blog.geekulcha.com">Blog</a>
+                </li>
+                <li class="list-inline-item">
+                   <a class="text-uppercase u-fw-600 p-2" href="https://www.geekulcha.dev//partners">Partners</a>
+                </li>
+             </ul>
+          </div>
+       </div>
+    </div>
+ </footer>
+ <div class="scroll-top bg-white box-shadow-v1">
+    <i class="fa fa-angle-up" aria-hidden="true"></i>
+ </div>
+ 
+  
 
-      <div class="form-group"> <textarea name="" placeholder="Why do you want to be part of this bootcamp" class="input"  id=""></textarea> 
-      </div>
+    </div>  
 
 
-      <div class="form-group">
-        <input type="submit" class="input-button" value="Submit Registration"> </div>
-  </div>
-</section>
+    
 
-    <script type="text/javascript" src="stats.js"></script>
-    <script src="./oasis.js"></script>
-  </body>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+<script src="https://www.geekulcha.dev//static/js/reactify-django.ui.js"></script>
+<script src="https://www.geekulcha.dev//static/js/main.js"></script>
+<script src="https://www.geekulcha.dev//static/js/bundle.js"></script>
+<script src="https://www.geekulcha.dev//static/js/challenge.js"></script>
+<script src="/static/js/anime.js"></script>
+<script src="https://www.geekulcha.dev//static/js/front.js"></script>
+
+
+</body>
 </html>
